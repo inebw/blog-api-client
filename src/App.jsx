@@ -16,7 +16,7 @@ function App() {
           },
           credentials: "include",
         });
-        if (!response.ok) throw new Error("not found");
+        if (!response.ok) return
         const data = await response.json();
         setUser(data);
       } catch (error) {
