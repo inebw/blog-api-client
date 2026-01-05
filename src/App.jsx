@@ -29,10 +29,10 @@ function App() {
 
   return (
     <>
-      <h1>All Posts</h1>
+      <h2>Recent Posts</h2>
       {posts.map((post) => (
         <div className="post" key={post.id}>
-          <h2>{post.title}</h2>
+          <h3>{post.title}</h3>
           <p>{post.content}</p>
         </div>
       ))}
