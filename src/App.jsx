@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch("http://localhost:3000/user", {
+        const response = await fetch("https://blog-api-client-silk.vercel.app/user", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
