@@ -20,7 +20,7 @@ export default function CommentForm({id}) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="comment-form">
       <label htmlFor="comment">
         <input
           type="textarea"

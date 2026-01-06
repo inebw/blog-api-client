@@ -33,7 +33,7 @@ export default function Login() {
     navigate("/")
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="auth-form">
       <label htmlFor="username">
         <p>Username</p>
         <input

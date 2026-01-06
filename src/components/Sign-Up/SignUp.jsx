@@ -35,7 +35,7 @@ export default function SignUp() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="auth-form">
       <label htmlFor="first_name">
         <p>First Name</p>
         <input

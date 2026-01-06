@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background: none;
+    font-family: inherit;
+    outline: none;
+}
+
+body {
+    height: 100vh - 20px;
+    margin: 10px;
+    background-color: #f4f1de;
+    color: #3d405b;
+}
+
+@media (min-width:1600px) {
+    body{
+        margin:10px calc(10% + 100px) 10px calc(10% + 100px);
+    }
+}
