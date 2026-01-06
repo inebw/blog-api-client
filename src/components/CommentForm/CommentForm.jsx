@@ -10,7 +10,7 @@ export default function CommentForm({id}) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch(`http://localhost:3000/comments/${id}`, {
+    const response = await fetch(`https://blog-api-xgmn.onrender.com/comments/${id}`, {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },

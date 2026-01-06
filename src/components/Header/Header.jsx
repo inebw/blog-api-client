@@ -7,7 +7,7 @@ export default function Header({ user, setUser }) {
   const [navClass, setNavClass] = useState("hidden");
 
   const handleLogout = async () => {
-    await fetch("http://localhost:3000/logout", {
+    await fetch("https://blog-api-xgmn.onrender.com/logout", {
       method: "POST",
       credentials: "include",
     });

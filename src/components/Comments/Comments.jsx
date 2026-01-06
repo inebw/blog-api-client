@@ -17,7 +17,7 @@ export default function Comments({ id }) {
 
   const deleteComment = async (comment_id) => {
     const response = await fetch(
-      `http://localhost:3000/comments/${comment_id}`,
+      `https://blog-api-xgmn.onrender.com/comments/${comment_id}`,
       {
         method: "DELETE",
         credentials: "include",

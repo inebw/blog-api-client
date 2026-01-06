@@ -8,7 +8,7 @@ export default function useFetchPost(id = null) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/posts/${id ? id : ""}`);
+        const response = await fetch(`https://blog-api-xgmn.onrender.com/posts/${id ? id : ""}`);
         if (!response.ok) throw new Error("Server Error");
 
         const data = await response.json();

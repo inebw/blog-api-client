@@ -8,7 +8,7 @@ export default function useFetchComments(id) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/comments/${id}`);
+        const response = await fetch(`https://blog-api-xgmn.onrender.com/comments/${id}`);
         if (!response.ok) throw new Error("Server Error");
         const data = await response.json();
         setComments(data);
